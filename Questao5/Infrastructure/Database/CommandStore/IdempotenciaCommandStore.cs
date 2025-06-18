@@ -18,7 +18,6 @@ namespace Questao5.Infrastructure.Database.CommandStore
         {
             resultado = string.Empty;
 
-            //using var connection = new SqliteConnection(_config.ConnectionString);
             using var connection = new SqliteConnection(_config.Name);
             connection.Open();
 
@@ -37,7 +36,6 @@ namespace Questao5.Infrastructure.Database.CommandStore
 
         public void Salvar(string chave, MovimentarContaCommand requisicao, string resultado)
         {
-            //using var connection = new SqliteConnection(_config.ConnectionString);
             using var connection = new SqliteConnection(_config.Name);
             connection.Open();
 

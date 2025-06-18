@@ -14,7 +14,6 @@ namespace Questao5.Infrastructure.Database.CommandStore
 
         public void RegistrarMovimento(string idMovimento, string idConta, DateTime data, string tipo, decimal valor)
         {
-            //using var connection = new SqliteConnection(_config.ConnectionString);
             using var connection = new SqliteConnection(_config.Name);
             connection.Open();
 

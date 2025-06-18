@@ -14,7 +14,6 @@ namespace Questao5.Infrastructure.Database.QueryStore
 
         public decimal ObterTotalMovimentos(string idContaCorrente, string tipo)
         {
-            //using var connection = new SqliteConnection(_config.ConnectionString);
             using var connection = new SqliteConnection(_config.Name);
             connection.Open();
 

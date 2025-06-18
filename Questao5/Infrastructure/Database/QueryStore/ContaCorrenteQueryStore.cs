@@ -15,7 +15,6 @@ namespace Questao5.Infrastructure.Database.QueryStore
 
         public ContaCorrente? ObterPorNumero(int numero)
         {
-            //using var connection = new SqliteConnection(_config.ConnectionString);
             using var connection = new SqliteConnection(_config.Name);
             connection.Open();
             using var cmd = connection.CreateCommand();
